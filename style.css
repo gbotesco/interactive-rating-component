@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+/*Primary*/
+
+--Orange: hsl(25, 97%, 53%);
+
+/*Neutral*/
+
+--White: hsl(0, 0%, 100%);
+--LightGrey: hsl(217, 12%, 63%);
+--MediumGrey: hsl(216, 12%, 54%);
+--DarkBlue: hsl(213, 19%, 18%);
+--VeryDarkBlue: hsl(216, 12%, 8%);
+}
+body{
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--DarkBlue);
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.star img{
+    background-color: var(--VeryDarkBlue);
+    border-radius: 25px;
+    padding: 7px;
+    margin-bottom: 20px;
+}
+.note p{
+    color: var(--MediumGrey);
+    font-size: 15px;
+    line-height: 25px;
+    margin: 25px 0 30px 0;
+}
+.ratings button{
+    background-color: var(--VeryDarkBlue);
+    color: var(--White);
+    margin-right: 15px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+}
+.ratings button:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+    font-weight: 700;
+    transition: ease-in-out 0.5s;
+}
+.submit-btn{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.submit-btn a{
+    background-color: var(--Orange);
+    color: var(--White);
+    padding: 15px 140px;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--White);
+    font-weight: 700;
+}
+
+a:hover{
+    cursor: pointer;
+    background-color: var(--White);
+    color: var(--Orange);
+    transition: ease-in-out 0.5s;
+}
+
+/*Thanks styling*/
+.card-container{
+    position: relative;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--DarkBlue);
+    width: 400px;
+    padding: 30px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+h3{
+    color: var(--White);
+}
+
+.thanks-illustrations p{
+    background-color: var(--VeryDarkBlue);
+    color: var(--Orange);
+    text-align: center;
+    font-size: 10px;
+    padding: 5px 5px;
+    margin-top: 10px;
+    border-radius: 10px;     
+}
+.message{
+    text-align: center;
+    color: var(--MediumGrey);
+    font-size: 15px;
+    line-height: 25px;
+    margin: 25px 0 30px 0;
+}
+.message p{
+    margin-top: 10px;
+}
